@@ -18,6 +18,7 @@ package org.hudsonci.test.ui;
 
 import com.thoughtworks.selenium.Selenium;
 import org.hudsonci.test.ui.util.SystemUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -38,7 +39,9 @@ public class ConfigureHudsonTest extends BaseUITest {
     private static final String BUILD_SUCCESS_TEXT = "Finished: SUCCESS";
     private static final String BUILD_FAILURE_TEXT = "Finished: FAILURE";
 
+    //TODO enable me when JDK installer will be fixed
     @Test
+    @Ignore
     public void testAddJDK() throws Exception {
         String addJDKButtonXpath = "//button[contains(text(), 'Add JDK')]";
         String jdkName = "jdk_6_24";

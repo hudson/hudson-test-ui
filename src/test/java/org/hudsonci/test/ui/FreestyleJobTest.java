@@ -53,7 +53,7 @@ public class FreestyleJobTest extends BaseUITest {
 //        selenium.click("//span[@id='yui-gen2']/span/button");
 //        selenium.click("link=Invoke Maven 2 (Legacy)");
 //        selenium.type("textarea._.targets", "clean install -DskipTests");
-        selenium.click("//span[@id='yui-gen19']/span/button");
+        selenium.click("//span[@id='yui-gen21']/span/button");
         selenium.waitForPageToLoad("30000");
         selenium.click("link=Build Now");
         selenium.waitForPageToLoad("30000");
@@ -97,9 +97,9 @@ public class FreestyleJobTest extends BaseUITest {
         selenium.click("//button[@type='button']");
         selenium.waitForPageToLoad("30000");
         selenium.click(CVS_LBL_SELECT_EXP);
-        selenium.type("cvs_root", ":pserver:anonymous@ayam.cvs.sourceforge.net:/cvsroot/ayam");
-        selenium.type("textarea._.allModules", "ayam");
-        selenium.click("//span[@id='yui-gen19']/span/button");
+        selenium.type("_.cvsroot", ":pserver:anonymous:@tortoisecvs.cvs.sourceforge.net:/cvsroot/tortoisecvs");
+        selenium.type("_.module", "docs");
+        selenium.click("//span[@id='yui-gen21']/span/button");
         selenium.waitForPageToLoad("30000");
         selenium.click("link=Build Now");
         selenium.waitForPageToLoad("30000");

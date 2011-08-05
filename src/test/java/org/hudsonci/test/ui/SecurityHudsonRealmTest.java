@@ -74,7 +74,7 @@ public class SecurityHudsonRealmTest extends BaseUITest {
 //        selenium.click("//span[@id='yui-gen2']/span/button");
 //        selenium.click("link=Invoke top-level Maven targets");
 //        selenium.type("textarea._.targets", "clean");
-        selenium.click("//span[@id='yui-gen19']/span/button");
+        selenium.click("//span[@id='yui-gen21']/span/button");
         selenium.waitForPageToLoad("30000");
         selenium.click("link=Build Now");
         selenium.waitForPageToLoad("30000");
