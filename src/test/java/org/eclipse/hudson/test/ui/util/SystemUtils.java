@@ -12,9 +12,9 @@
  *    Geoff Waymark
  *        
  *
- *******************************************************************************/ 
+ *******************************************************************************/
 
-package org.hudsonci.test.ui.util;
+package org.eclipse.hudson.test.ui.util;
 
 /**
  * Utility Class to work out which platform the Master is running on.

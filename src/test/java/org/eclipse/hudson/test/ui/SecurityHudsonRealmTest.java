@@ -12,17 +12,15 @@
  *    Anton Kozak
  *      
  *
- *******************************************************************************/ 
+ *******************************************************************************/
 
-package org.hudsonci.test.ui;
+package org.eclipse.hudson.test.ui;
 
 import com.thoughtworks.selenium.Selenium;
 import org.junit.Test;
 
 /**
  * Test cases to verify security configuration.
- * <p/>
- * Copyright (C) 2011 Hudson-CI.org
  * <p/>
  * Date: 4/29/11
  *
@@ -74,7 +72,7 @@ public class SecurityHudsonRealmTest extends BaseUITest {
 //        selenium.click("//span[@id='yui-gen2']/span/button");
 //        selenium.click("link=Invoke top-level Maven targets");
 //        selenium.type("textarea._.targets", "clean");
-        selenium.click("//span[@id='yui-gen19']/span/button");
+        selenium.click("//span[@id='yui-gen21']/span/button");
         selenium.waitForPageToLoad("30000");
         selenium.click("link=Build Now");
         selenium.waitForPageToLoad("30000");

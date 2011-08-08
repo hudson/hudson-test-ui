@@ -12,9 +12,9 @@
  *    Anton Kozak
  *      
  *
- *******************************************************************************/ 
+ *******************************************************************************/
 
-package org.hudsonci.test.ui;
+package org.eclipse.hudson.test.ui;
 
 import com.thoughtworks.selenium.Selenium;
 import org.junit.AfterClass;
@@ -29,8 +29,6 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * Base class for UI testing.
- * <p/>
- * Copyright (C) 2011 Hudson-CI.org
  * <p/>
  * Date: 4/29/11
  *
@@ -163,3 +161,4 @@ public abstract class BaseUITest{
         driver.quit();
     }
 }
+
