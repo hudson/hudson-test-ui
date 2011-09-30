@@ -25,6 +25,7 @@
 package org.hudsonci.test.ui;
 
 import com.thoughtworks.selenium.Selenium;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -94,6 +95,7 @@ public class FreestyleJobTest extends BaseUITest {
     }
 
     @Test
+    @Ignore
     public void testCvsScm() {
         Selenium selenium = getSelenium();
         selenium.open("/");
