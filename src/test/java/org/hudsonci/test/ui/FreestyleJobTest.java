@@ -95,7 +95,6 @@ public class FreestyleJobTest extends BaseUITest {
     }
 
     @Test
-    @Ignore
     public void testCvsScm() {
         Selenium selenium = getSelenium();
         selenium.open("/");
