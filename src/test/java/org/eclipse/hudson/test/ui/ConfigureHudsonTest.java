@@ -252,7 +252,7 @@ public class ConfigureHudsonTest extends BaseUITest {
         selenium.click("mode");
         selenium.click("//button[@type='button']");
         selenium.click(SUBVERSION_LBL_SELECT_EXP);
-        selenium.type("svn.remote.loc", "http://not.there.com/");
+        selenium.type("svn.remote.loc", "http://127.0.0.1/");
         selenium.click("//button[contains(text(), 'Save')]");
         
         //Run and verify

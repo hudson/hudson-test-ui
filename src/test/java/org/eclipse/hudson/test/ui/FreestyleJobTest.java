@@ -17,6 +17,7 @@
 package org.eclipse.hudson.test.ui;
 
 import com.thoughtworks.selenium.Selenium;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -47,7 +48,7 @@ public class FreestyleJobTest extends BaseUITest {
         selenium.click("//button[@type='button']");
         selenium.waitForPageToLoad("30000");
         selenium.click(SUBVERSION_LBL_SELECT_EXP);
-        selenium.type("svn.remote.loc", "https://svn.java.net/svn/hudson~svn/trunk/hudson/plugins/subversion");
+        selenium.type("svn.remote.loc", "http://svn.apache.org/repos/asf/subversion/trunk/doc");
 //        selenium.click("//span[@id='yui-gen2']/span/button");
 //        selenium.click("link=Invoke Maven 2 (Legacy)");
 //        selenium.type("textarea._.targets", "clean install -DskipTests");
