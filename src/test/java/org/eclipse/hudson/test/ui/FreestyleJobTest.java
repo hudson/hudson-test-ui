@@ -76,7 +76,7 @@ public class FreestyleJobTest extends BaseUITest {
 //        selenium.click("//span[@id='yui-gen2']/span/button");
 //        selenium.click("link=Invoke Maven 2 (Legacy)");
 //        selenium.type("textarea._.targets", "clean install -DskipTests");
-        selenium.click("//span[@id='yui-gen19']/span/button");
+        selenium.click("//span[@id='yui-gen21']/span/button");
         selenium.waitForPageToLoad("30000");
         selenium.click("link=Build Now");
         selenium.waitForPageToLoad("30000");

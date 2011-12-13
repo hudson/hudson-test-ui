@@ -45,7 +45,6 @@ public class SecurityHudsonRealmTest extends BaseUITest {
         selenium.click("cb0");
 
         selenium.click(HUDSUN_USER_DB_LBL_SELECT_EXP);
-        selenium.click("privateRealm.enableCaptcha");
         selenium.click(ANYONE_CAN_DO_ANUTHING_LBL_SELECT_EXP);
         selenium.click(CONFIG_SAVE_SELECT_EXP);
         selenium.waitForPageToLoad("30000");
