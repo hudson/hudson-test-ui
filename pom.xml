@@ -28,7 +28,7 @@
 
     <properties>
         <junit.version>4.8.1</junit.version>
-        <selenium.version>2.7.0</selenium.version>
+        <selenium.version>2.15.0</selenium.version>
         <jetty-version>6.1.26</jetty-version>
         <hudson.home>${basedir}/target/work</hudson.home>
         <jetty.stop.port>6001</jetty.stop.port>

@@ -23,6 +23,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.fail;
 
 /**
@@ -261,5 +262,28 @@ public class ConfigureHudsonTest extends BaseUITest {
         selenium.waitForPageToLoad("30000");
         selenium.open("/job/scm-test/1/console");
         waitForTextPresent("Retrying after 10 seconds", null);
+    }
+
+    @Test
+    public void testDeleteSlave() {
+        Selenium selenium = getSelenium();
+        selenium.open("/");
+        waitForTextPresent("Manage Hudson");
+        selenium.click("link=Manage Hudson");
+        waitForTextPresent("Manage Nodes");
+        selenium.click("link=Manage Nodes");
+        waitForTextPresent("New Node");
+        selenium.click("link=New Node");
+        selenium.type("id=name", "new-slave");
+        selenium.click("name=mode");
+        selenium.click("id=ok-button");
+        selenium.waitForPageToLoad("30000");
+        selenium.click("//button[contains(text(), 'Save')]");
+        selenium.open("/computer/new-slave");
+        waitForTextPresent("Delete Slave");
+        selenium.click("link=Delete Slave");
+        selenium.click("id=confirm");
+        selenium.waitForPageToLoad("30000");
+        assertFalse(selenium.getLocation().contains("new-slave"));
     }
 }
